@@ -1,0 +1,27 @@
+p:first-child {
+  font-size: 16px;
+}
+
+p:last-child {
+  font-size: 14px;
+}
+
+p:nth-child(odd) {
+  background: red;
+}
+
+p:nth-child(even) {
+  background: blue;
+}
+
+p:nth-child(3n+0) {
+  background: red;
+}
+
+P:nth-child(2) {
+  color: green;
+}
+
+p:only-child {
+    color: red;
+}
