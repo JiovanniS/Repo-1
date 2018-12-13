@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+      <link rel="stylesheet" href="main.css">
+      <style>
+        div {
+          width: 100%;
+          height: 70px;
+        }
+        
+        p {
+          width: 100%;
+          heigth: 70px;
+        }
+        
+        h1 {
+          width: 100%;
+          height: 70px;
+        }
+        
+        p::before {
+          /*Insters content before all p's */
+          content: "Hey";
+          color: blue;
+        }
+        
+        p::after {
+          /*Insterts content after the p's */
+          content: "Bye";
+          color: blue;
+        }
+        
+        p:empty {
+          /* Selects all p's with no children */
+          background: blue;
+          color: blue;
+        }
+        
+        p::first-letter {
+          /*Changes first letter of all P's */
+          font-size: 200%;
+           color: red;
+        }
+        
+        p::first-line {
+          /*Changes first line of a P*/
+           background-color: green;
+        }
+        
+        h1:hover {
+          /*Changes color when hovered over*/
+           background-color: aqua;
+        }
+        
+        :not(p) {
+          /*changes everything that is not a p*/
+          background: gray;
+        }
+        
+        p:first-child {
+          /* Selects every p element that is the first child of its parent */
+          background-color: yellow;
+        }
+        
+        a:link {
+          /* Makes links blue */
+          color: blue;
+        }
+        
+        p:only-of-type {
+          /*Selects every p element that is the only <p> element of its parent */
+           background: green;
+        }
+      </style>
+    </head>
+      <p>First paragraph</p>
+      <h1>Header</h1>
+      <div>First Div</div>
+      <p class="p3"></p>
+      <p class="p3"></p>
+      <p class="p3"></p>
+      <div class="dclass"></div>
+    
+
+
+</body>
+</html>
